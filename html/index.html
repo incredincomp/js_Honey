@@ -43,7 +43,7 @@ function addIP(ip) {
   var li = document.createElement('li');
   li.textContent = ip;
   var cip = JSON.stringify(ip);
-  window.location = "attacker_json.php?ips=" + cip;
+//  window.location = "attacker_json.php?ips=" + cip; # works and sends one ip to url and then apache logs, returns 404
   ul.appendChild(li);
 }
 
