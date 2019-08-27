@@ -42,6 +42,8 @@ function addIP(ip) {
   console.log('ip: ', ip);
   var li = document.createElement('li');
   li.textContent = ip;
+  var cip = JSON.stringify(ip);
+  window.location = "attacker_json.php?ips=" + cip;
   ul.appendChild(li);
 }
 
